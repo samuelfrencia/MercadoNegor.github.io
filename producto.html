@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="js.js" defer></script>
+</head>
+
+<body>
+    <!--NAVEGADOR-->
+    <section class="navCentrado">
+        <nav class="navbar navbar-expand-lg bg-">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="img/logoMercadoNegro.png" alt="LogoMercado"
+                        width="200"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-current="page" href="#Productos">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contacto</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar producto.."
+                            aria-label="Search">
+                        <button class="btn btn-outline-dark" type="submit">Buscar</button>
+                    </form>
+                    <div class="gridNavLogoCarrito">
+                        <a href=""><img src="img/logoCarrito.png" alt="Carrito" width="30"></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <!--FIN NAVEGADOR-->
+
+
+
+    <!--PRODUCTO CON DESCRIPCION-->
+    <div class="margenProd">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col">
+                    <h1>Notebook Lenovo V-series V15</h1>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div>
+                <div class="row">
+                    <div class="col text-center">
+                        <img src="img/not.jpg" alt="Notebook" width="300">
+                    </div>
+                    <div class="col">
+                        <h2>$165.000</h2>
+                        <ul class="list-unstyled">
+                            <ul>
+                                <li>Procesador Intel Core i3</li>
+                                <li>Memoria RAM de 8GB</li>
+                                <li>Almacenamiento 512 SSD</li>
+                                <li>Pantalla LED de 15.6"</li>
+                                <li>Resolución de 1366x768 px</li>
+                                <li>Es antirreflejo</li>
+                                <li>Conexion wifi y bluetooth</li>
+                                <li>Posee pad numerico</li>
+                                <li>3 puertos USB y puerto HDMI</li>
+                                <a href="https://www.lenovo.com/ar/es/" target="_blank" rel="noopener noreferrer"><img
+                                        src="img/logolenovo.png" target="_blank" width="60" title="Fabricante"></img>
+                                </a>
+                            </ul>
+                        </ul>
+                        <div>
+                            <input type="number" id="quantity" name="quantity" min="1" value="1" class="cantidades">
+                            <button type="button" class="btn btn-outline-success">Comprar ahora</button>
+                            <button type="button" class="btn btn-outline-dark">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--FIN PRODUCTO CON DESCRIPCION-->
+
+
+
+        <!--DESCRIPCION Y METODOS DE PAGO-->
+        <br>
+        <hr class="lineas text-center"><br><br>
+        <div class="container ">
+            <div class="row">
+
+                <div class="col-8  text-left">
+                    <h4>Descripcion</h4>
+                    <p><strong>Mejor Resolución</strong></p>
+                    <p>Haz que tu trabajo fluya y que tus datos estén seguros
+                        Por un lado, las opciones de almacenamiento dual de la V15 y los gráficos Intel UHD facilitan la
+                        productividad;
+                        por otro, su módulo de plataforma segura (TPM) 2.0 (firmware) mantiene tu información segura
+                        mediante el
+                        cifrado
+                        de datos y contraseñas.
+                    </p><br>
+                    <p><strong>Imágenes elegantes</strong></p>
+                    <p>El diseño contemporáneo de esta laptop le da un aspecto y sensación de primera calidad, con un
+                        cuerpo
+                        delgado
+                        que se adapta a tus viajes cuando estás fuera de la oficina. La pantalla de 15.6” HD te ofrece
+                        colores
+                        vivos
+                        y
+                        claros, con marcos laterales estrechos para una mejor visión.
+                    </p><br>
+                    <p><strong>Probado para la fiabilidad</strong></p>
+                    <p>Hemos sometido a esta laptop a pruebas de fiabilidad y durabilidad en ocho condiciones extremas:
+                        prueba
+                        de
+                        choque, prueba de vibración, prueba de teclado dentro del sistema, prueba de vida de las
+                        bisagras,
+                        prueba de
+                        fiabilidad del ventilador, prueba de desgaste del panel, prueba de temperatura de funcionamiento
+                        y
+                        prueba de
+                        presión. Está preparada para cualquier circunstancia a la que pueda verse sometida en tu
+                        negocio.
+                    </p>
+                </div>
+                <div class="col-1"></div>
+                <div class="col-3  text-center bordepagos">
+                    <h3>Medios de pago</h3>
+                    <p>Hasta 12 cuotas sin tarjeta</p>
+                    <img src="img/mercado credito.svg" alt="Mercado Credito">
+                    <br><br>
+                    <p>Tarjetas de Credito</p>
+                    <img src="img/Visa.svg" alt="Visa">
+                    <img src="img/MasterCard.svg" alt="MasterCard">
+                    <img src="img/Naranja.svg" alt="Naranja">
+                    <br><br>
+                    <p>Tarjetas de Debito</p>
+                    <img src="img/VisaDebito.svg" alt="">
+                    <img src="img/MaestroDebito.svg" alt="Maestro Debito">
+                    <img src="img/MasterCardDebito.svg" alt="MasterCard Debito">
+                    <br><br>
+                    <p>Puntos de Efectivo</p>
+                    <img src="img/RapiPago.png" alt="Rapi Pago" style="width: 70px;">
+                    <img src="img/PagoFacil.png" alt="Pago Facil" style="width: 70px;">
+                </div>
+
+            </div>
+        </div>
+
+        <!--FIN DE DESCRIPCION Y METODOS DE PAGO-->
+
+
+
+        <hr><br><br><br>
+
+
+
+        <!--COMENTARIO Y EVALUACION CON ESTRELLAS-->
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-5 border" style="text-align: center;"><br>
+                <form>
+                    <label>
+                        Califica el producto del 1 al 5, y deje su opinion:
+                        <select id="puntaje-feedback" style="border: 1px solid black; border-radius: 20%;">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </label>
+                    <br>
+                </form>
+                <label>
+                    <textarea required id="textoComentario" name="comentario" rows="4" cols="40"
+                        placeholder="Escribe aquí tu opinión..." style="border: 1px solid black;" ></textarea><br>
+                    <input id="enviarOpinion" class="btn btn-outline-success" type="submit" value="Enviar">
+                </label>
+                <br><br>
+            </div>
+
+            <div class="col-md-5 border" style="text-align: center;">
+                <div><br>
+                    <h4>Comentarios y puntaje del producto</h4>
+                    <div id="listadoComentarios"></div>
+
+
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        <!--FIN COMENTARIO Y EVALUACION CON ESTRELLAS-->
+
+   
+
+
+        <hr>
+
+    </div>
+
+
+
+
+
+
+
+
+    <!--FOOTER-->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Nuestra Empresa</h4>
+                    <p>Somos una empresa dedicada a la venta de productos de calidad y con los mejores precios.
+                        Contáctanos para más información.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Información de Contacto</h4>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-map-marker-alt"></i> Dirección: Bv. Sarmiento, Ciudad de Brinkmann</li>
+                        <li><i class="fas fa-phone"></i> Teléfono: +54 3562 445521</li>
+                        <li><i class="fas fa-envelope"></i> Correo electrónico: mercadonegro@gmail.com</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4>Síguenos</h4>
+                    <ul class="list-unstyled">
+                        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><img
+                                src="img/igg.png" target="_blank" class="redes"></img></a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><img src="img/tw.png"
+                                target="_blank" class="redes"></img></a>
+                        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><img
+                                src="img/face.png" target="_blank" class="redes"></img></a>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2023 Mi Empresa. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-unstyled list-inline float-md-right">
+                        <li class="list-inline-item"><a href="#">Términos y condiciones</a></li>
+                        <li class="list-inline-item"><a href="#">Política de privacidad</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--FOOTER-->
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>

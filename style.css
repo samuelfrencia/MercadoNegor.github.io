@@ -1,0 +1,74 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+}
+body{
+    background-color: #EFEFEF;
+}
+nav {
+    background-color: #EFEFEF;
+
+}
+.redes {
+    width: 40px;
+    
+}
+.card {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    margin-bottom: 5px;
+  }
+  a {
+    color:black;
+    text-decoration: none;
+}
+.Productoss {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.margenProd {
+    background-color: white;
+}
+.gridDescripcion{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 60% 25% ;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+
+.bordepagos {
+    border-radius: 6%;
+    border: 1px solid black;
+    padding: 40px;
+    
+}
+.lineas {
+    margin-left: 8%;
+    margin-right: 8%;
+    width: 84%;
+    opacity:15%;
+}
+
+.gridNavLogoCarrito {
+    grid-area: gridNavLogoCarrito;
+    padding: 25px;
+    text-align: left;
+}
+.cantidades {
+    border: 1px solid black;
+    width: 40px;
+    border-radius: 15%;
+    margin-right: 2px;
+    
+}
+  
+
+
