@@ -8,51 +8,57 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/vue@3.3.2/dist/vue.global.js"></script>
 </head>
 
 <body>
 
 
-    <section class="navCentrado">
-        <nav class="navbar navbar-expand-lg bg-">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html"><img src="img/logoMercadoNegro.png" alt="LogoMercado"
-                        width="200"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#Productos">Productos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contacto</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Buscar producto.."
-                            aria-label="Search">
-                        <button class="btn btn-outline-dark" type="submit">Buscar</button>
-                    </form>
-                    <div class="gridNavLogoCarrito">
-                        <a href=""><img src="img/logoCarrito.png" alt="Carrito" width="30"></a>
+    <section id="navbarVue">
+        <div class="navCentrado">
+            <nav class="navbar navbar-expand-lg bg-">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html"><img :src="imgNavbarLogo" alt="LogoMercado"
+                            width="200"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#Productos">Productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contacto</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Buscar producto.."
+                                aria-label="Search">
+                            <button class="btn btn-outline-dark" type="submit">Buscar</button>
+                        </form>
+                        <div class="gridNavLogoCarrito">
+                            <a href=""><img :src="imgLogoCarrito" alt="Carrito" width="30"></a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </div>
+    </section>
+
+    <section id="carrouselVue">
         <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="img/DC_20221104105427_pTu1uEmz.jpg" class="d-block w-100" alt="...">
+                    <img :src="imgCarrousel1" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="img/DC_20230110092310_VJe69EQR.jpg" class="d-block w-100" alt="...">
+                    <img :src="imgCarrousel2" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="img/DC_20230315140823_a1xsazfM.jpg" class="d-block w-100" alt="...">
+                    <img :src="imgCarrousel3" class="d-block w-100" alt="...">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
@@ -67,11 +73,13 @@
             </button>
         </div>
     </section>
+
     <br><br>
-    <section>
-        <div>
+
+    <section id="productosVue">
+        <div >
             <div style="text-align: center;">
-                <h1 id="Productos">Productos</h1>
+                <h1 id="Productos" >Productos</h1>
             </div>
             <br>
             <div class="Productoss">
@@ -117,30 +125,6 @@
 
 
 
-
-
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <br><br><br><br><br><br><br><br>
     <hr class="lineas">
     <footer>
@@ -164,8 +148,8 @@
                     <ul class="list-unstyled">
                         <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><img
                                 src="img/igg.png" target="_blank" class="redes"></img></a>
-                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><img
-                                src="img/tw.png" target="_blank" class="redes"></img></a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><img src="img/tw.png"
+                                target="_blank" class="redes"></img></a>
                         <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><img
                                 src="img/face.png" target="_blank" class="redes"></img></a>
                     </ul>
@@ -192,13 +176,24 @@
 
 
 
-    <script src="mostrarProductos.js" defer></script>
+    <!--<script src="mostrarProductos.js" defer></script>-->    
     <script src="js.js" defer></script>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
         crossorigin="anonymous"></script>
+
+
+    <script src="agregadoDeVue.js"></script>
+
+    <script>
+
+    </script>
+    <script>
+        const mountedApp = navbarVue.mount('#navbarVue') + carrouselVue.mount('#carrouselVue') 
+              + productosVue.mount('#productosVue')
+    </script>
 </body>
 
 </html>
